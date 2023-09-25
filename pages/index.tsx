@@ -29,6 +29,13 @@ export default function Home({ allPostsData }: { allPostsData: PostsDataProps[]}
               </small>
             </li>
           ))}
+          <li className={utilStyles.listItem} >
+            <Link href={'/mong-page'}>Mongo Crud</Link>
+            <br />
+            <small className={utilStyles.lightText}>
+              <Date dateString='2023-09-25 12:00:00' />
+            </small>
+          </li>
         </ul>
       </section>
     </Layout>

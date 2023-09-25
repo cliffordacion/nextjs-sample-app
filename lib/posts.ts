@@ -57,6 +57,7 @@ export async function getPostData(id: string): Promise<GetPostDataProps> {
   // Use remark to convert markdown into HTML string
   const processedContent = await unified()
     .use(remarkParse)
+     // @ts-ignore comment
     .use(remarkHtml)
     .process(matterResult.content);
 
